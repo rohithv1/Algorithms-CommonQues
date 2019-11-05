@@ -34,3 +34,5 @@ if __name__ == "__main__":
     # Below is using filter function in Python
     odd_num_list_filter = list(filter(lambda x : x % 2 != 0, num_list))
     
+    print('Yayyy!') if odd_num_list == odd_num_list_filter else print('Alas!!')
+    
