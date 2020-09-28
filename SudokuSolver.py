@@ -28,6 +28,13 @@ def possible(x,y,n):
         if sudoku[x][i] == n:
             return False
     
+    X, Y = 3 *(x//3), 3*(y//3)
+    
+    for i in range(X, X+3):
+        for j in range(Y, Y+3):
+            if sudoku[i][j] == n:
+                return False
+    
     return True
 
 def solve_sudoku():
